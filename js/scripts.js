@@ -6362,7 +6362,7 @@ function() {
                 year: 2019,
                 month: 9,
                 day: 8,
-                hours: 0,
+                hours: 16,
                 minutes: 0,
                 seconds: 0,
                 words: {
@@ -6388,7 +6388,7 @@ function() {
             var t, s = n(p, e);
             t = function() {
                 var t, n, a, y;
-                d = new Date, p.enableUtc ? (i = new Date(d.getFullYear(), d.getMonth(), d.getDate(), d.getHours(), d.getMinutes(), d.getSeconds()), l = (r - i.getTime()) / 1e3) : l = (r - d.getTime()) / 1e3, l > 0 ? (u = parseInt(l / 86400, 10), l %= 86400, c = parseInt(l / 3600, 10), l %= 3600, m = parseInt(l / 60, 10), w = parseInt(l % 60, 10)) : (u = 0, c = 0, m = 0, w = 0, window.clearInterval(o), p.onEnd()), p.plural ? (t = u > 1 ? p.words.days + p.words.pluralLetter : p.words.days, n = c > 1 ? p.words.hours + p.words.pluralLetter : p.words.hours, a = m > 1 ? p.words.minutes + p.words.pluralLetter : p.words.minutes, y = w > 1 ? p.words.seconds + p.words.pluralLetter : p.words.seconds) : (t = p.words.days, n = p.words.hours, a = p.words.minutes, y = p.words.seconds), p.inline ? e.innerHTML = u + " " + t + ", " + c + " " + n + ", " + m + " " + a + ", " + w + " " + y + "." : (s.days.amount.textContent = (p.zeroPad && u.toString().length < 2 ? "0" : "") + u, s.days.word.textContent = t, s.hours.amount.textContent = (p.zeroPad && c.toString().length < 2 ? "0" : "") + c, s.hours.word.textContent = n, s.minutes.amount.textContent = (p.zeroPad && m.toString().length < 2 ? "0" : "") + m, s.minutes.word.textContent = a, s.seconds.amount.textContent = (p.zeroPad && w.toString().length < 2 ? "0" : "") + w, s.seconds.word.textContent = y)
+                d = new Date, p.enableUtc ? (i = new Date(d.getFullYear(), d.getMonth(), d.getDate(), d.getHours(), d.getMinutes(), d.getSeconds()), l = (r - i.getTime()) / 1e3) : l = (r - d.getTime()) / 1e3, l > 0 ? (u = parseInt(l / 86400, 10), l %= 86400, c = parseInt(l / 3600, 10), l %= 3600, m = parseInt(l / 60, 10), w = parseInt(l % 60, 10)) : (u = 0, c = 0, m = 0, w = 0, window.clearInterval(o), p.onEnd()), p.plural ? (t = (u==0) || (u > 1) ? p.words.days + p.words.pluralLetter : p.words.days, n = (c == 0) || (c > 1) ? p.words.hours + p.words.pluralLetter : p.words.hours, a = (m== 0 || m > 1) ? p.words.minutes + p.words.pluralLetter : p.words.minutes, y = (w == 0 || w > 1) ? p.words.seconds + p.words.pluralLetter : p.words.seconds) : (t = p.words.days, n = p.words.hours, a = p.words.minutes, y = p.words.seconds), p.inline ? e.innerHTML = u + " " + t + ", " + c + " " + n + ", " + m + " " + a + ", " + w + " " + y + "." : (s.days.amount.textContent = (p.zeroPad && u.toString().length < 2 ? "0" : "") + u, s.days.word.textContent = t, s.hours.amount.textContent = (p.zeroPad && c.toString().length < 2 ? "0" : "") + c, s.hours.word.textContent = n, s.minutes.amount.textContent = (p.zeroPad && m.toString().length < 2 ? "0" : "") + m, s.minutes.word.textContent = a, s.seconds.amount.textContent = (p.zeroPad && w.toString().length < 2 ? "0" : "") + w, s.seconds.word.textContent = y)
             }, t(), o = window.setInterval(t, p.refresh)
         })
     }, e.simplyCountdown = o
