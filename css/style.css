@@ -26,6 +26,10 @@ body {
   font-family: "Alice", serif;
 }
 
+a:link {
+  color: #CB5A3E
+}
+
 ::-moz-selection {
   background: #000000;
   color: #ffffff;

@@ -102,6 +102,11 @@ a {
   color: #b1b881
 }
 
+a:link {
+  color: #CB5A3E;
+  text-decoration: none
+}
+
 a:active,
 a:focus,
 a:hover {
