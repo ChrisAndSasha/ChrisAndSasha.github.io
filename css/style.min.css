@@ -24,7 +24,8 @@ body {
   color: #8b8e94;
   line-height: 1.7;
   font-size: 18px;
-  font-family: Alice, serif
+  /*font-family: Alice, serif*/
+  font-family: Sorts Mill Goudy, serif
 }
 
 ::selection {
@@ -374,7 +375,7 @@ a:hover {
 }
 
 .probootstrap-navbar .navbar-brand em {
-  font-family: Alice, serif
+  font-family: Sorts Mill Goudy, serif
 }
 
 .probootstrap-navbar .navbar-nav>li>a {
@@ -493,7 +494,7 @@ a:hover {
 
 .text-intro-wrap .text-intro h1 em,
 .text-intro-wrap .text-intro h2 {
-  font-family: Alice, serif
+  font-family: Sorts Mill Goudy, serif
 }
 
 @media screen and (max-width:767px) {
@@ -1394,7 +1395,7 @@ a:hover {
   font-size: 72px;
   line-height: 60px!important;
   text-transform: uppercase;
-  font-family: Alice, serif
+  font-family: Sorts Mill Goudy, serif
 }
 
 .date-countdown>div .simply-word {
